@@ -11,11 +11,12 @@ namespace ShootingDice
             // Call roll for "this" object and for the "other" object
             int otherRoll = other.Roll();
             int myRoll = otherRoll+1;
-             SmackTalkingPlayer smack=new SmackTalkingPlayer();
+            
             Console.WriteLine($"{Name} rolls a {myRoll}");
-            smack.Play();
+
+            
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
-              smack.Play();
+              
             if (myRoll > otherRoll)
             {
                 Console.WriteLine($"{Name} Wins!");

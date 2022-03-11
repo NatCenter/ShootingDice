@@ -9,7 +9,7 @@ namespace ShootingDice
         static void Main(string[] args)
         {
             Player player1 = new Player();
-            player1.Name = "Bo b";
+            player1.Name = "Bob";
 
             Player player2 = new Player();
             player2.Name = "Sue";
@@ -37,6 +37,9 @@ namespace ShootingDice
             };
 
             PlayMany(players);
+            OneHigherPlayer newRoll=new OneHigherPlayer();
+              newRoll.Name="Jury the Judge";
+              newRoll.Play(player1);
         }
 
         static void PlayMany(List<Player> players)

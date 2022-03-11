@@ -1,11 +1,26 @@
+using System;
+
 namespace ShootingDice
 {
-    // A Player who brings a large di e to the game
+    // A Player who brings a large die to the game
     public class LargeDicePlayer : Player
     {
-        public LargeDicePlayer()
-        {
-            DiceSize = 20;
+         public int largerDice { get; set; } = 20;
+        public virtual void Play(){
+            Console.WriteLine($"{largerDice}");
+
+
         }
+           
+
+
+        
+        
+        
+       
+
+        
+            
+        
     }
 }

@@ -29,7 +29,11 @@ namespace ShootingDice
             large.Name = "Bigun Rollsalot";
 
             player1.Play(large);
+            SmackTalkingPlayer smack =new SmackTalkingPlayer();
+            smack.Play(player1);
 
+            CreativeSmackTalkingPlayer RandomSmack=new CreativeSmackTalkingPlayer();
+            RandomSmack.Play(player1);
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
@@ -40,6 +44,8 @@ namespace ShootingDice
             OneHigherPlayer newRoll=new OneHigherPlayer();
               newRoll.Name="Jury the Judge";
               newRoll.Play(player1);
+              HumanPlayer human =new HumanPlayer();
+              human.Play(player2);
         }
 
         static void PlayMany(List<Player> players)

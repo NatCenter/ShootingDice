@@ -3,17 +3,21 @@ using System.Collections.Generic;
 
 namespace ShootingDice
 {
-    // TODO: Complete this class
+   
 
     // A Player who shouts a taunt every time they roll dice
-    public class SmackTalkingPlayer
+    public class SmackTalkingPlayer: Player
     {
         public string Taunt { get; set;}
 
-        public virtual void Play(){
-
-            Console.WriteLine("Daddy needs a new pair of shoes!");
-        }
+       public override int Roll()
+       {
+           Console.WriteLine("Winner winner chicken dinner");
+           return base.Roll();
+           
+       }
+            
+        
 
         
     }

@@ -31,7 +31,8 @@ namespace ShootingDice
             player1.Play(large);
             SmackTalkingPlayer smack =new SmackTalkingPlayer();
             smack.Play(player1);
-
+           
+           
             CreativeSmackTalkingPlayer RandomSmack=new CreativeSmackTalkingPlayer();
             RandomSmack.Play(player1);
             Console.WriteLine("-------------------");
@@ -45,7 +46,14 @@ namespace ShootingDice
               newRoll.Name="Jury the Judge";
               newRoll.Play(player1);
               HumanPlayer human =new HumanPlayer();
-              human.Play(player2);
+              human.Play(player1);
+
+              
+              SoreLoserPlayer loserUpper=new SoreLoserPlayer();
+              loserUpper.Play(player1);
+              UpperHalfPlayer upper=new UpperHalfPlayer();
+              upper.Play(player1);
+
         }
 
         static void PlayMany(List<Player> players)

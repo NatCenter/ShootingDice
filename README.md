@@ -11,8 +11,8 @@ The goal of this exercise is to create classes to represent those various types 
 ### The Setup
 
 1. Clone this repo.
-1. Create a new repo under your github account.
-1. Change the remote origin of the  local repo to your new github repo.
+1. Create a new repo under your GITHUB account.
+1. Change the remote origin of the  local repo to your new GITHUB repo.
 
 ### The Task
 
